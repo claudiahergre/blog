@@ -1,0 +1,26 @@
+header {
+    background-image: url('https://wallpaperstock.net/wallpapers/thumbs1/54631hd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    height: 120px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+.botonera {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin-inline: 5px;
+    padding-inline: 50px;
+    background-color: white;
+    border: 1px solid white;
+}

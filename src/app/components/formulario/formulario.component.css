@@ -1,0 +1,44 @@
+body {
+    background-image: url('https://wallpaperstock.net/wallpapers/thumbs1/54631hd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+form {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(13, 29, 34);
+    color: gray;
+    font-weight: 700;
+    padding: 30px;
+}
+
+.mb-3 {
+    width: 100%;
+}
+
+.linea {
+    display: flex;
+
+}
+
+.boton {
+    padding: 10px;
+    background-color: rgb(95, 114, 63);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: white;
+    color: rgb(95, 114, 63);
+}

@@ -1,0 +1,43 @@
+<div class="botonera">
+    <button (click)="filtrarPorColor ('verde')">Ver las verdes</button>
+    <button (click)="filtrarPorColor ('roja')">Ver las rojas</button>
+    <button (click)="filtrarPorColor ('azul')">Ver las azules</button>
+    <button (click)="filtrarPorColor ('morada')">Ver las moradas</button>
+    <button (click)="getAllPosts()">Ver todos los posts</button>
+</div>
+
+<article class="post" *ngFor="let post of posts; let indice= index">
+
+    <div class="pares" *ngIf="(indice % 2) === 0">
+
+        <img [src]='post.imagen' alt="">
+
+        <div class="texto">
+            <h3>{{post.titulo}}</h3>
+            <h6>{{post.autor}}</h6>
+            <p>{{post.texto}}</p>
+            <div>
+                <p>{{post.fecha}}</p>
+                <p>#{{post.categoria}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="impares" *ngIf="(indice % 2) !== 0">
+
+        <div class="texto">
+            <h3>{{post.titulo}}</h3>
+            <h6>{{post.autor}}</h6>
+            <p>{{post.texto}}</p>
+            <div>
+                <p>{{post.fecha}}</p>
+                <p>#{{post.categoria}}</p>
+            </div>
+        </div>
+
+        <img [src]='post.imagen' alt="">
+
+    </div>
+
+</article>

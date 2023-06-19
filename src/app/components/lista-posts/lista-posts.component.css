@@ -1,0 +1,63 @@
+.botonera {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin: 20px;
+    padding: 2px;
+    padding-inline: 20px;
+    background-color: rgb(79, 46, 72);
+    color: white;
+    border: 1px solid lightgray;
+}
+
+.botonera button:nth-child(1):hover {
+    background-color: rgb(95, 114, 63);
+    color: white;
+}
+
+div button:nth-child(2):hover {
+    background-color: rgb(113, 9, 13);
+    color: white;
+}
+
+div button:nth-child(3):hover {
+    background-color: rgb(24, 53, 63);
+    color: white;
+}
+
+div button:nth-child(4):hover {
+    background-color: rgb(49, 6, 34);
+    color: white;
+}
+
+div button:nth-child(5):hover {
+    background-color: black;
+    color: white;
+}
+
+.pares,
+.impares {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.texto {
+    padding: 30px;
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h6 {
+    font-style: italic;
+}
+
+img {
+    width: 600px;
+}
