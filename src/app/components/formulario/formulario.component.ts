@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { PostsService } from 'src/app/services/posts.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-formulario',
@@ -19,29 +20,33 @@ export class FormularioComponent {
 
   constructor() {
     this.formulario = new FormGroup({
-      titulo: new FormControl('', [Validators.required]),
-      imagen: new FormControl(''),
-      autor: new FormControl('', [Validators.required]),
-      fecha: new FormControl('', [Validators.required]),
-      categoria: new FormControl('', [Validators.required]),
-      texto: new FormControl('', [Validators.required]),
+      titulo: new FormControl(),
+      imagen: new FormControl(),
+      autor: new FormControl(),
+      fecha: new FormControl(),
+      categoria: new FormControl(),
+      texto: new FormControl(),
     })
 
 
   }
 
-  /*  ngOnInit():void */
-
-
   envioFormulario() {
     //console.log(this.formulario.value)
     this.postsService.createPost(this.formulario.value)
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Un post suculento',
+      showConfirmButton: false,
+      timer: 2500,
+      width: 500,
+      padding: '3em',
+      color: '#716add',
+      background: '#000000'
+    })
+
+    this.formulario.reset()
   }
-
-
-  checkError(field: string, error: string): boolean | undefined {
-    return this.formulario.get(field)?.hasError(error) && this.formulario.get(field)?.touched
-  }
-
 
 }
