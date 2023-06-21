@@ -19,8 +19,13 @@ header {
 }
 
 button {
+    width: 300px;
     margin-inline: 5px;
-    padding-inline: 50px;
     background-color: white;
     border: 1px solid white;
+}
+
+button:hover {
+    background-color: rgb(24, 53, 63);
+    color: white;
 }

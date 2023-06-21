@@ -78,7 +78,7 @@ export class PostsService {
 
 
   createPost(nuevoPost: Post) {
-    this.arrPosts.push(nuevoPost)
+    this.arrPosts.unshift(nuevoPost)
     //console.log(nuevoPost)
     console.log(this.arrPosts)
   }
