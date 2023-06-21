@@ -1,4 +1,4 @@
-body {
+.cuerpo {
     background-image: url('https://wallpaperstock.net/wallpapers/thumbs1/54631hd.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,6 @@ form {
 
 .linea {
     display: flex;
-
 }
 
 .boton {
